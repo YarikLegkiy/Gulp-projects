@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: $wrapper;
+  margin-left: 23.1578947%;
+  padding: 0 1rem;
+}
+
+@include breakpoint($extraLarge-bp) {
+  .wrapper {
+    margin-left: 0;
+  }
+}

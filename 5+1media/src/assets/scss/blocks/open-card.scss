@@ -1,0 +1,124 @@
+.open-card {
+  width: 100%;
+  max-width: 76.6rem;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  opacity: 0;
+  transition: all .5s linear;
+}
+
+.open-card.active {
+  position: inherit;
+
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+.open-card__wrapper {
+  position: relative;
+}
+
+.open-card__item {
+  margin-left: 2.13rem;
+
+  .open-card__item__title {
+    margin-bottom: 1.33rem;
+    position: relative;
+
+    font-size: 1.2rem;
+    font-weight: $fw-semi-bold;
+    line-height: 1.15;
+    color: $primary;
+  }
+
+  .open-card__item__title:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -2.13rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $yellow;
+    border-radius: 50%;
+  }
+
+  .open-card__item--title--services:before {
+    background-color: $green;
+  }
+
+  .before__none.open-card__item__title:before {
+    content: none;
+  }
+
+  p {
+    max-width: 32.13rem;
+    margin-bottom: 2.66rem;
+    position: relative;
+
+    font-size: 1.2rem;
+    font-weight: $fw-regular;
+    line-height: 1.2;
+    color: $primary;
+  }
+
+  p.open-card__item--services--before:before, p.open-card__item--socials--before:before,
+  p.open-card__item--development--before:before, p.open-card__item--publication--before:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -2.13rem;
+    top: .3rem;
+    background-color: $green;
+    border-radius: 50%;
+  }
+
+  p.open-card__item--socials--before:before {
+    background-color: $red;
+  }
+
+  p.open-card__item--development--before:before {
+    background-color: $brown;
+  }
+
+  p.open-card__item--publication--before:before {
+    background-color: $blue;
+  }
+
+  img {
+    margin-bottom: 3rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.open-card__right {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 27rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include breakpoint($medium-bp) {
+  .open-card {
+    flex-direction: column;
+  }
+
+  .open-card__right {
+    margin-top: 5.33rem;
+  }
+}

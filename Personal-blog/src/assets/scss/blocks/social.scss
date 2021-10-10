@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.social__item {
+  margin: 0 .75rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba($black, .8);
+  transition: box-shadow .2s linear;
+
+  &:hover {
+    box-shadow: 0 0 16px rgba($black, .8);
+  }
+}
+
+.social__link {
+  border-radius: 50%;
+}

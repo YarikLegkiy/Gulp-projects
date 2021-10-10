@@ -1,0 +1,184 @@
+.btn {
+  display: inline-block;
+  padding: 1.26rem 3.86rem;
+
+  @include ff-inherit;
+
+  font-size: 1.2rem;
+  font-weight: $fw-semi-bold;
+  color: $white;
+
+  background-color: $primary;
+  border: 1px solid $primary;
+  border-radius: 2rem;
+
+  text-decoration: none;
+
+  transition: color .2s ease-in-out, background .2s ease-in-out;
+
+  z-index: 100;
+}
+
+.btn:hover {
+  color: $primary;
+
+  background: none;
+  border: 1px solid $primary
+}
+
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  background: none;
+  border-radius: 50%;
+
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btn-arrow--red {
+  color: $white;
+
+  background-color: $red;
+  border: 1px solid $red;
+}
+
+.btn-arrow--red:hover {
+  color: $red;
+
+  background: none;
+
+  .arrow {
+    border: solid $red;
+    border-width: 0 3px 3px 0;
+  }
+}
+
+.btn-arrow--red-long {
+  display: none;
+}
+
+.btn-arrow--black {
+  color: $white;
+
+  background-color: $primary;
+  border: 1px solid $primary;
+}
+
+.btn-arrow--black:hover {
+  color: $primary;
+
+  background: none;
+
+  .arrow {
+    border: solid $primary;
+    border-width: 0 3px 3px 0;
+  }
+}
+
+.btn--green {
+  padding: .73rem 1.33rem;
+
+  font-size: .93rem;
+  font-weight: $fw-medium;
+  color: $green;
+
+  background: none;
+  border-color: $green;
+}
+
+.btn--green:hover {
+  color: $white;
+
+  background-color: $green;
+  border-color: $green;
+}
+
+.btn--red {
+  color: $red;
+
+  border-color: $red;
+}
+
+.btn--red:hover {
+  background-color: $red;
+  border-color: $red;
+}
+
+.btn--brown {
+  color: $brown;
+
+  border-color: $brown;
+}
+
+.btn--brown:hover {
+  background-color: $brown;
+  border-color: $brown;
+}
+
+.btn--blue {
+  color: $blue;
+
+  border-color: $blue;
+}
+
+.btn--blue:hover {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.arrow {
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow--right {
+  padding-right: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow--left {
+  padding-left: 2px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+@include breakpoint($medium-bp) {
+  .intro__btn, .footer__btn {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+
+    width: 100%;
+
+    font-size: .93rem;
+  }
+
+  .btn--blue {
+    font-size: .66rem;
+  }
+
+  .footer__btn {
+    bottom: -6rem;
+  }
+}
+
+@include breakpoint($small-bp) {
+  .btn-arrow--red {
+    display: none;
+  }
+
+  .btn-arrow--red-long {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 2rem 1rem 0;
+
+    border-radius: 20px;
+  }
+}

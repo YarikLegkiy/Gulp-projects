@@ -1,0 +1,66 @@
+@mixin breakpoint($bp) {
+  @media screen and (max-width: $bp){
+    @content;
+  }
+}
+
+@mixin header-text {
+  font-size: 1.2rem;
+  font-weight: $fw-semi-bold;
+  line-height: 1.44;
+
+  color: $primary;
+}
+
+@mixin ff-inherit {
+  font-family: inherit;
+}
+
+@mixin wh-100 {
+  width: 100%;
+  height: 100vh;
+}
+
+@mixin w-p {
+  width: 100%;
+  padding-top: 14.66rem;
+}
+
+@mixin d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin d-flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin d-flex-sb-fs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin h5-style {
+  font-size: .93rem;
+  font-weight: $fw-medium;
+  line-height: 1.3;
+  color: $grey;
+}
+
+@mixin h2-style {
+  font-size: 3.2rem;
+  font-weight: $fw-semi-bold;
+  line-height: 1.1;
+  color: $primary;
+}
+
+@mixin footer-h2 {
+  font-size: .8rem;
+  font-weight: $fw-regular;
+  line-height: 1.1;
+  color: $grey;
+}

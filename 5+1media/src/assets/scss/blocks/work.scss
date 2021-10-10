@@ -1,0 +1,40 @@
+.work {
+  @include wh-100;
+}
+
+.work__wrapper {
+  height: 100vh;
+
+  @include d-flex-center;
+}
+
+.work__content {
+  width: 100%;
+  h5 {
+    @include h5-style;
+
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    @include h2-style;
+
+    max-width: 61.53rem;
+  }
+}
+
+@include breakpoint($medium-bp) {
+  .work__content {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include breakpoint($small-bp) {
+  .work__content {
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

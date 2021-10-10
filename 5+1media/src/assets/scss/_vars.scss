@@ -1,0 +1,34 @@
+/* color */
+$primary:   #1B1B1B;
+
+$white:     #ffffff;
+$black:     #000000;
+$yellow:    #FEDE31;
+$blue:      #2E6FB0;
+$red:       #FC3858;
+$green:     #14A890;
+$brown:     #DD9E53;
+$grey:      #8B8B8B;
+
+$bodyBackground:  $white;
+
+/* z-index */
+$z-index-header:        999;
+$z-index-header-menu:   1010;
+
+/* width */
+$min-width:     320px;
+$extraLarge-bp: 1199px;
+$large-bp:      991px;
+$medium-bp:     767px;
+$small-bp:      575px;
+$verySmall-bp:  360px;
+
+$wrapper:       1250px;
+
+/* font */
+$fw-light:      300;
+$fw-regular:    400;
+$fw-medium:     500;
+$fw-semi-bold:  600;
+$fw-bold:       700;

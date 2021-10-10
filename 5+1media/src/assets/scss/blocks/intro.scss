@@ -1,0 +1,151 @@
+.intro {
+  @include wh-100;
+
+  background-color: $yellow;
+}
+
+.intro__wrapper {
+  position: relative;
+  height: 100vh;
+
+  @include d-flex-center;
+}
+
+.intro__content {
+  width: 100%;
+
+  h5 {
+    @include h5-style;
+
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+  }
+
+  .intro__title {
+    margin-bottom: 4rem;
+
+    font-size: 10rem;
+    font-weight: $fw-bold;
+    color: $white;
+  }
+
+  .intro__content--services-title {
+    max-width: 67.73rem;
+    margin-bottom: 5.33rem;
+
+    font-size: 3.2rem;
+    color: $primary;
+  }
+
+  p {
+    margin-bottom: 6.66rem;
+    max-width: 26.06rem;
+
+    font-size: 1.6rem;
+    font-weight: $fw-semi-bold;
+    color: $primary;
+  }
+}
+
+.intro__services--btns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 2.66rem;
+  column-gap: 1rem;
+
+  li {
+    grid-column: span 2;
+  }
+}
+
+@include breakpoint($extraLarge-bp) {
+  .intro__content {
+    .intro__title  {
+      font-size: 8rem;
+    }
+
+    .intro__content--services-title {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@include breakpoint($large-bp) {
+  .intro__services--btns {
+    li {
+      grid-column: span 3;
+    }
+  }
+}
+
+@include breakpoint($medium-bp) {
+  .intro__content {
+    h5 {
+      margin-bottom: 2rem;
+    }
+
+    .intro__title  {
+      font-size: 5rem;
+    }
+
+    .intro__content--services-title {
+      font-size: 2.4rem;
+
+      margin-bottom: 4rem;
+    }
+  }
+
+  .intro__services--btns {
+    row-gap: 1rem;
+  }
+}
+
+@include breakpoint($small-bp) {
+  .intro__socials {
+    padding-top: 5rem;
+  }
+
+  .intro__content {
+    .intro__title  {
+      font-size: 3rem;
+    }
+
+    .intro__content--services-title {
+      font-size: 1.46rem;
+    }
+
+    p {
+      font-size: .93rem;
+    }
+  }
+
+  .intro__services--btns {
+    li {
+      grid-column: span 6;
+    }
+  }
+
+  .intro__socials--btns {
+    margin-bottom: 3rem;
+  }
+}
+
+@include breakpoint($verySmall-bp) {
+  .intro__content {
+    h5 {
+      margin-bottom: 1rem;
+    }
+
+    .intro__title {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .intro__services--btns {
+    row-gap: .5rem;
+  }
+}
+
+.bg-white {
+  background: $white;
+}

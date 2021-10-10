@@ -1,0 +1,41 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+
+html {
+  font-size: 15px;
+}
+
+body {
+  min-width: $min-width;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: $primary;
+
+  background-color: $bodyBackground;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Blocks */
+@import "blocks/fonts";
+@import "blocks/wrapper";
+
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/cross";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/work";
+@import "blocks/services";
+@import "blocks/case";
+@import "blocks/open-card";
+@import "blocks/image-slider";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/footer";

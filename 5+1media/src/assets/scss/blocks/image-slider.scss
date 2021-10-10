@@ -1,0 +1,52 @@
+.image-slider {
+  width: 100%;
+}
+
+.image-slider__block {
+  width: 97%;
+  height: auto;
+
+  background-color: $white;
+  border-radius: 0 450px 0 0;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 0 450px 0 0;
+  }
+}
+
+@include breakpoint($large-bp) {
+  .image-slider__block {
+    height: 46.6rem;
+
+    border-radius: 0 350px 0 0;
+
+    img {
+      border-radius: 0 350px 0 0;
+    }
+  }
+}
+
+@include breakpoint($medium-bp) {
+  .image-slider__block {
+    border-radius: 0 300px 0 0;
+
+    img {
+      border-radius: 0 300px 0 0;
+    }
+  }
+}
+
+@include breakpoint($small-bp) {
+  .image-slider__block {
+    height: 24rem;
+
+    border-radius: 0 155px 0 0;
+
+    img {
+      border-radius: 0 155px 0 0;
+    }
+  }
+}

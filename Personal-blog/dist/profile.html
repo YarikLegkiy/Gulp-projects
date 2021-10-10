@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Yaroslav Legkiy | Blog</title>
+</head>
+
+<body>
+
+    <div class="page" id="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#!">Статті</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#!">Створення сайтів</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#!">Інтернет маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#!">Просування відео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../text.html">Про мене</a>
+                        </li>
+                        <li class="nav__item">
+                            <button class="nav__link" type="button" data-modal="advertising-modal">Реклама</button>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <button class="burger active" type="button" id="sidebarToggle">
+                    <span>Відкрити навігацію</span>
+                </button>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="../profile.html">Профіль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../signin.html">Вийти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="../search.html"method="get">
+                    <input class="search__input" type="text" placeholder="Пошук по блогу">
+                </form>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <!--Sidebar start-->
+        <aside class="sidebar" id="sidebar">
+            <!--Header start-->
+            <div class="sidebar__header">
+                <img src="../assets/images/sidebar-header.jpg" alt="sidebar-header-img">
+            </div>
+            <!--Header end-->
+            <!--Content start-->
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img class="profile__avatar"
+                         src="https://lestatus.ru/wp-content/uploads/%D0%A1%D0%BA%D0%B0%D0%BD%D0%B4%D0%B8%D0%BD%D0%B0%D0%B2%D0%B8%D1%8F.jpg"
+                         alt="profile-img">
+                    <div class="profile__header">
+                        <div class="profile__name">Ярослав Легкий</div>
+                        <div class="profile__prof">блог front-end розробника</div>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#!" class="social__link" target="_blank">
+                                <img src="../assets/images/instagram.svg" alt="Ярослав Легкий Instagram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#!" class="social__link" target="_blank">
+                                <img src="../assets/images/github.svg" alt="Ярослав Легкий GitHub">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#!" class="social__link" target="_blank">
+                                <img src="../assets/images/linkedin.svg" alt="Ярослав Легкий Linkedin">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#!" class="social__link" target="_blank">
+                                <img src="../assets/images/telegram.svg" alt="Ярослав Легкий Linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="profile__text">
+                        <p>Front-end розробник. Практик верстки сайтів. Створенням сайтів, різної складності, займаюся з 2020
+                            року.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Content end-->
+            <!--Nav start-->
+            <div class="sidebar__nav">
+                <nav class="nav nav--mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#!">Статті</a>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#!">Створення сайтів</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#!">Інтернет маркетинг</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#!">Просування відео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../text.html">Про мене</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../text.html">Реклама</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../profile.html">Профіль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="../signin.html">Вийти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Nav end-->
+            <!--Footer start-->
+            <div class="sidebar__footer">
+                <a href="../works.html" class="btn btn--red">Мої роботи</a>
+                <button class="btn btn--blue" type="button" data-modal="contact-modal">Написати мені</button>
+            </div>
+            <!--Footer end-->
+        </aside>
+        <!--Sidebar end-->
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                <h1 class="page__title">Профіль</h1>
+                
+                <form action="/" class="form" method="post">
+                    <div class="cabinet">
+                        <div class="cabinet__form">
+                            <div class="form__group form__group--md">
+                                <input type="text" class="form__control" placeholder="Ваше ім'я" value="Ярослав Легкий">
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group form__group--md">
+                                <input type="email" class="form__control" placeholder="Ваш e-mail" value="yariklegkiy@gmail.com">
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group form__group--md">
+                                <input type="password" class="form__control" placeholder="Новий пароль">
+                                <span class="form__line"></span>
+                            </div>
+                            <div class="form__group form__group--md">
+                                <input type="password" class="form__control" placeholder="Підтвердження паролю">
+                                <span class="form__line"></span>
+                            </div>
+                        </div>
+                        <div class="cabinet__avatar">
+                            <img src="https://glazastik.com/wp-content/uploads/2018/03/Ljudyna.jpg"
+                                 alt="Avatar">
+                            <label class="cabinet__file">
+                                <input type="file">
+                                вибрати аватар
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__footer">
+                        <button class="btn btn--blue btn--rounded btn-sm">Зберегти</button>
+                    </div>
+                </form>
+            </div>
+            <!--Scroll-Up start-->
+            <div class="scroll-up">
+                <img src="../assets/images/up-arrow.svg" alt="arrow">
+            </div>
+            <!--Scroll-Up end-->
+        </main>
+    </div>
+
+    <!--Modals-->
+    <!--Story-Modal start-->
+    <div class="modal" id="story-modal">
+        <div class="modal__content  modal__content--story">
+            <video autoplay="autoplay" class="modal__video" controls="controls" poster="https://placehold.it/420x580">
+                <source src="../assets/videos/story-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            </video>
+        </div>
+    </div>
+    <!--Story-Modal end-->    <!--Contact-Modal start-->
+    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="../assets/images/close.svg" alt="Закрити">
+            </button>
+            <h1 class="page__title">Напиши мені</h1>
+            <form action="/" class="form " method="post">
+                <div class="form__group form__group--md">
+                    <input type="text" class="form__control" placeholder="Ваше ім'я">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--md">
+                    <input type="email" class="form__control" placeholder="Ваш e-mail">
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea" placeholder="Текст повідомлення"></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__footer">
+                    <div class="form__group form__group--md">
+                        <button class="btn btn--blue btn--rounded btn-sm">Відправити</button>
+                    </div>
+                </div>
+            </form>
+            <ul class="modal__footer">
+                <li>e-mail: <a href="mailto:yariklegkiy@gmail.com">yariklegkiy@gmail.com</a></li>
+                <li>тел: <a href="tel:+380672549571">+380-67-25-49-571</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Contact-Modal end-->    <!--Share-Modal start-->
+    <div class="modal" id="share-modal">
+        <div class="modal__content text__center">
+            <button class="modal__close" type="button">
+                <img src="../assets/images/close.svg" alt="Закрити">
+            </button>
+            <h1 class="page__title">Поділитися</h1>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="#!" class="social__link">
+                        <img src="../assets/images/share/facebook.svg" alt="Ярослав Легкий Facebook">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#!" class="social__link">
+                        <img src="../assets/images/share/vk.svg" alt="Ярослав Легкий Vk">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#!" class="social__link">
+                        <img src="../assets/images/share/twitter.svg" alt="Ярослав Легкий Twitter">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#!" class="social__link">
+                        <img src="../assets/images/share/copy.svg" alt="Ярослав Легкий Copy">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Share-Modal end-->    <!--Contact-Modal start-->
+    <div class="modal" id="advertising-modal">
+        <div class="modal__content modal__content--contact text__center">
+            <button class="modal__close" type="button">
+                <img src="../assets/images/close.svg" alt="Закрити">
+            </button>
+            <h1 class="page__title">Реклама</h1>
+            <p class="advertising__text">На рахунок реклами писати на пошту:</p>
+            <p class="advertising__text">e-mail: <a href="mailto:yariklegkiy@gmail.com">yariklegkiy@gmail.com</a></p>
+        </div>
+    </div>
+    <!--Contact-Modal end-->
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+.form__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form__left, .form__right {
+  width: 100%;
+  max-width: 30.66rem;
+
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+
+    font-family: inherit;
+    font-size: .93rem;
+    font-weight: $fw-bold;
+
+    border: none;
+    border-bottom: 1px solid $primary;
+    background: none;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $primary;
+    opacity: 1;
+  }
+}
+
+.form__left {
+  padding-right: 1rem;
+}
+
+.form__right {
+  padding-left: 1rem;
+}
+
+@include breakpoint($medium-bp) {
+  .form__left, .form__right {
+    max-width: 18rem;
+
+    input {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include breakpoint($small-bp) {
+  .form__content {
+    flex-direction: column;
+  }
+
+  .form__left, .form__right {
+    max-width: 100%;
+    padding: 0;
+    input {
+
+    }
+  }
+}

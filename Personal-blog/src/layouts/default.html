@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{> head }}
+</head>
+
+<body>
+
+    <div class="page" id="page">
+        <!-- Header -->
+        {{> header }}
+
+        <!-- Sidebar -->
+        {{> sidebar }}
+
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                {{> body }}
+            </div>
+            <!--Scroll-Up start-->
+            <div class="scroll-up">
+                <img src="../assets/images/up-arrow.svg" alt="arrow">
+            </div>
+            <!--Scroll-Up end-->
+        </main>
+    </div>
+
+    <!--Modals-->
+    {{> story-modal }}
+    {{> contact-modal }}
+    {{> share-modal }}
+    {{> advertising-modal }}
+
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</html>

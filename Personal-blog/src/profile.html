@@ -1,0 +1,39 @@
+---
+layout: default
+title: Profile
+---
+<h1 class="page__title">Профіль</h1>
+
+<form action="/" class="form" method="post">
+    <div class="cabinet">
+        <div class="cabinet__form">
+            <div class="form__group form__group--md">
+                <input type="text" class="form__control" placeholder="Ваше ім'я" value="Ярослав Легкий">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--md">
+                <input type="email" class="form__control" placeholder="Ваш e-mail" value="yariklegkiy@gmail.com">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--md">
+                <input type="password" class="form__control" placeholder="Новий пароль">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--md">
+                <input type="password" class="form__control" placeholder="Підтвердження паролю">
+                <span class="form__line"></span>
+            </div>
+        </div>
+        <div class="cabinet__avatar">
+            <img src="https://glazastik.com/wp-content/uploads/2018/03/Ljudyna.jpg"
+                 alt="Avatar">
+            <label class="cabinet__file">
+                <input type="file">
+                вибрати аватар
+            </label>
+        </div>
+    </div>
+    <div class="form__footer">
+        <button class="btn btn--blue btn--rounded btn-sm">Зберегти</button>
+    </div>
+</form>

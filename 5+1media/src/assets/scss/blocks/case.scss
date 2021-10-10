@@ -1,0 +1,221 @@
+.case {
+  @include w-p;
+}
+
+.case__content {
+  width: 100%;
+
+  h5 {
+    @include h5-style;
+
+    margin-bottom: 3.93rem;
+  }
+}
+
+.case__list {
+  width: 100%;
+}
+
+.case__list--index {
+  margin-bottom: 5rem;
+}
+
+.case__item {
+  border-bottom: 1px solid $grey;
+}
+
+.case__item:last-child {
+  border-bottom: none;
+}
+
+.case__item.active {
+  .case__header {
+    .case__header--services-number {
+      color: $green;
+    }
+
+    .case__header--socials-number {
+      color: $red;
+    }
+
+    .case__header--development-number {
+      color: $brown;
+    }
+
+    .case__header--publication-number {
+      color: $blue;
+    }
+
+    .case__header--title {
+      color: $yellow;
+    }
+
+    .case__header--services-title {
+      color: $green;
+    }
+
+    .case__header--socials-title {
+      color: $red;
+    }
+
+    .case__header--development-title {
+      color: $brown;
+    }
+
+    .case__header--publication-title {
+      color: $blue;
+    }
+  }
+
+  .case__header--right {
+    justify-content: center;
+  }
+
+  .case__plus--open {
+    display: none;
+  }
+
+  .case__plus--close {
+    display: block;
+  }
+
+  .case__plus--line {
+    transform: rotate(45deg);
+
+    background-color: $yellow;
+  }
+
+  .case__plus--line-services {
+    background-color: $green;
+  }
+
+  .case__plus--line-socials {
+    background-color: $red;
+  }
+
+  .case__plus--line-development {
+    background-color: $brown;
+  }
+
+  .case__plus--line-publication {
+    background-color: $blue;
+  }
+
+  .case__plus--line:last-child {
+    transform: rotate(135deg);
+  }
+}
+
+.case__header {
+  @include d-flex-space-between;
+
+  width: 100%;
+  padding: 2.93rem 0;
+  position: relative;
+
+  .case__header--title {
+    max-width: 50.06rem;
+
+    font-size: 2.4rem;
+    font-weight: $fw-semi-bold;
+    line-height: 1.2;
+    color: $primary;
+  }
+}
+
+.case__header--services-number, .case__header--socials-number,
+.case__header--development-number, .case__header--publication-number {
+  position: absolute;
+  left: -5.33rem;
+  top: 3.5rem;
+  width: 15px;
+  height: 20px;
+
+  color: $grey;
+}
+
+.case__header--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 54px;
+  height: 54px;
+
+  cursor: pointer;
+}
+
+.case__header--right:focus {
+  border: 1px dashed #7B61FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.case__plus--open, .case__plus--close {
+  position: relative;
+  width: 34px;
+  height: 34px;
+}
+
+.case__plus--close {
+  display: none;
+}
+
+.case__plus--line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  width: 100%;
+  height: 3px;
+
+  background-color: $primary;
+  border-radius: 1.5px;
+}
+
+.case__plus--line:last-child {
+  bottom: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+@include breakpoint($large-bp) {
+  .case__header {
+    case__header--title {
+      max-width: none;
+    }
+  }
+}
+
+@include breakpoint($medium-bp) {
+  .case {
+    padding: 8rem 0;
+  }
+
+  .case__content {
+    h5 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .case__header {
+    padding: 1.5rem 0;
+
+    .case__header--title {
+      font-size: 1.6rem;
+    }
+  }
+
+  .case__plus {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@include breakpoint($small-bp) {
+  .case__header {
+    .case__header--title {
+      max-width: 17rem;
+    }
+  }
+}

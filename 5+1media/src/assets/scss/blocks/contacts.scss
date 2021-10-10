@@ -1,0 +1,74 @@
+.contacts {
+  width: 100%;
+  padding: 8rem 0;
+
+  background-color: $yellow;
+}
+
+.contacts__services {
+  background-color: $green;
+}
+
+.contacts__socials {
+  background-color: $red;
+}
+
+.contacts__development {
+  background-color: $brown;
+}
+
+.contacts__publication {
+  background-color: $blue;
+}
+
+.contacts__content {
+  width: 100%;
+
+  h1 {
+    max-width: 38.13rem;
+    margin-bottom: 7rem;
+
+    font-size: 6.4rem;
+    font-weight: $fw-semi-bold;
+    line-height: 1.2;
+    color: $white;
+  }
+}
+
+.contacts__form {
+  width: 100%;
+  position: relative;
+
+  p {
+    margin-bottom: 4rem;
+
+    font-size: .8rem;
+    font-weight: $fw-regular;
+    color: $primary;
+
+    opacity: .2;
+  }
+}
+
+@include breakpoint($large-bp) {
+  .contacts {
+    padding: 5.33rem 0;
+  }
+}
+
+@include breakpoint($medium-bp) {
+  .contacts {
+    padding: 4rem 0;
+  }
+
+  .contacts__content {
+    width: 100%;
+
+    h1 {
+      max-width: 17.86rem;
+      margin-bottom: 3rem;
+
+      font-size: 3rem;
+    }
+  }
+}
